@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://roseon-public.oss-ap-southeast-1.aliyuncs.com/public/rosninstant.umd.production.min.js"></script>
+</head>
+
+<body>
+  <script>
+    //for initialize some function
+    ROSNInstant.initializeAsync()
+      .then(data => {
+        
+        ROSNInstant.showRewardAds(
+          () => {
+            console.log("view ads success");
+          },
+          () => {
+            console.log("view ads failed");
+          }
+        )
+
+      })
+  </script>
+  <button onclick=showAds() id="ButtonAds">Show Video Ads</button>
+</body>
+
+</html>
