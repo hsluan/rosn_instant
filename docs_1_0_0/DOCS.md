@@ -19,14 +19,17 @@ Returns Promise<void> that resolves when the SDK is ready to use.
 
 ```
 
-### showRewardAds
+___
 
-▸ **showRewardAds**(`onSuccess`, `onFailure`): `void`
+### showAds
+
+▸ **showAds**(`adsType`, `onSuccess`, `onFailure`): `void`
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
+| `adsType` | `string` | reward, interstitial |
 | `onSuccess` | () => `void` | trigger on view ads success |
 | `onFailure` | () => `void` | trigger on view ads failed |
 
@@ -37,7 +40,8 @@ Returns Promise<void> that resolves when the SDK is ready to use.
 **Examples**
 
 ```ts
-ROSNInstant.showRewardAds(
+ROSNInstant.showAds(
+  'reward',
   () => {
     console.log("View ads success callback");
   },
