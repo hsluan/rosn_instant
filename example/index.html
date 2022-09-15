@@ -10,8 +10,9 @@
     //for initialize some function
     ROSNInstant.initializeAsync()
       .then(data => {
-        
-        ROSNInstant.showRewardAds(
+
+        ROSNInstant.showAds(
+          'reward',
           () => {
             console.log("view ads success");
           },
