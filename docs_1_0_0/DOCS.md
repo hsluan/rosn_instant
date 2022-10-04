@@ -15,9 +15,9 @@ ROSNInstant.initializeAsync().then(()=>{
   var sdkVersion = ROSNInstant.getSDKVersion(); // '1.0'
 });
 
-Returns Promise<void> that resolves when the SDK is ready to use.
-
 ```
+#### Returns
+`Returns Promise<void> that resolves when the SDK is ready to use.`
 
 ___
 

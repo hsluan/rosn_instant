@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <script src="https://roseon-public.oss-ap-southeast-1.aliyuncs.com/public/rosninstant.umd.production.min.js"></script>
+  <script src="./rosninstant.umd.production.min.js"></script>
 </head>
 
 <body>
@@ -10,11 +10,11 @@
     //for initialize some function
     ROSNInstant.initializeAsync()
       .then(data => {
-
+        const config = { adsType: "reward", rewardType: "POINT", num: 9 };
         ROSNInstant.showAds(
-          'reward',
-          () => {
-            console.log("view ads success");
+          config,
+          (reward) => {
+            console.log("view ads success", reward);
           },
           () => {
             console.log("view ads failed");
