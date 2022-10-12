@@ -60,3 +60,15 @@ Type: [Object][object]
  - `adsType` **string** type ads "reward" or "interstitial".
  - `rewardType` **string**  "POINT" or "SCORE"
 -  `num` **number** score/point expectation
+
+___
+
+### closeGame
+Indicates that the game has finished.
+▸ **closeGame**(): `void`
+
+#### Returns
+
+`void`
+
+___
